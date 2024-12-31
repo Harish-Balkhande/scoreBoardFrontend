@@ -1,0 +1,47 @@
+
+#controlPanelDiv{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    margin: auto;
+    background-color: aliceblue;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#controlPanelDiv >p{
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.controlPanel {
+    display: flex;
+    gap: 10px;  /* Adds space between buttons */
+    margin-bottom: 10px;
+    justify-content: space-around;
+  }
+
+  .row1,
+  .row2 {
+    padding: 15px;  /* Set padding so the circle isn't too small */
+    font-size: 16px;     /* Set a font size */
+    border: 1px solid #ccc; /* Add border for the buttons */
+    background-color: #f0f0f0; /* Light background color */
+    cursor: pointer;  /* Change cursor to pointer to indicate it's clickable */
+    border-radius: 50%; /* Makes the button circular */
+    width: 50px;  /* Set width to control the button size */
+    height: 50px; /* Set height equal to width for circular shape */
+    display: flex;
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+  }
+
+  /* Optional: Add hover effect for better interactivity */
+  .row1:hover, .row2:hover {
+    background-color: #e0e0e0; /* Darken the background on hover */
+  }
+
+  .row2[style="border: none;"] {
+    border: none; /* Removes border for the empty button */
+  }
