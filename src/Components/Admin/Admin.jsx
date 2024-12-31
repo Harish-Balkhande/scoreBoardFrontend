@@ -8,7 +8,7 @@ export default function Admin() {
     const [score, setScore] = useState();
 
     useEffect(() => {
-        const socket = io('http://localhost:8080', { transports: ['websocket', 'polling'] });
+        const socket = io('https://scoreboardbackend.onrender.com', { transports: ['websocket', 'polling'] });
 
         // Listen for 'scoreUpdate' event to get live score updates
         socket.on('scoreUpdate', (newScore) => {
