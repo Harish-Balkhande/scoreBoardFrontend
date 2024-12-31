@@ -456,7 +456,7 @@ export default function OverControlSection() {
         };
 
         try {
-            const response = await axios.post('http://localhost:8080/api/admin', data);
+            const response = await axios.post('https://scoreboardbackend.onrender.com/api/admin', data);
             console.log('Data posted successfully:', response.data);
             if (response.data.status === "success") {
                 localStorage.setItem("rec_id", response.data.rec_id);
