@@ -16,32 +16,33 @@
 
 .controlPanel {
     display: flex;
-    gap: 10px;  /* Adds space between buttons */
+    gap: 10px;  
     margin-bottom: 10px;
+    flex-wrap: wrap;
     justify-content: space-around;
   }
 
   .row1,
   .row2 {
-    padding: 15px;  /* Set padding so the circle isn't too small */
-    font-size: 16px;     /* Set a font size */
-    border: 1px solid #ccc; /* Add border for the buttons */
-    background-color: #f0f0f0; /* Light background color */
-    cursor: pointer;  /* Change cursor to pointer to indicate it's clickable */
-    border-radius: 50%; /* Makes the button circular */
-    width: 50px;  /* Set width to control the button size */
-    height: 50px; /* Set height equal to width for circular shape */
+    padding: 15px;  
+    font-size: 16px;     
+    border: 1px solid #ccc; 
+    background-color: #f0f0f0; 
+    cursor: pointer;  
+    border-radius: 50%; 
+    width: 50px;  
+    height: 50px;
     display: flex;
-    align-items: center; /* Vertically center the text */
-    justify-content: center; /* Horizontally center the text */
-    transition: background-color 0.3s ease; /* Smooth transition effect */
+    align-items: center; 
+    justify-content: center; 
+    transition: background-color 0.3s ease; 
   }
 
   /* Optional: Add hover effect for better interactivity */
   .row1:hover, .row2:hover {
-    background-color: #e0e0e0; /* Darken the background on hover */
+    background-color: #e0e0e0; 
   }
 
   .row2[style="border: none;"] {
-    border: none; /* Removes border for the empty button */
+    border: none; 
   }
